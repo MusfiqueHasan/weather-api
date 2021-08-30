@@ -3,7 +3,7 @@ const loadWeather = async () => {
     const weatherInput = document.getElementById('weather-input');
     const weatherValue = weatherInput.value;
     weatherInput.value = ''
-    const url = `http://api.openweathermap.org/data/2.5/weather?q=${weatherValue}&appid=b90bbd1e7d02772b43fd638fcd5529de`
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${weatherValue}&appid=b90bbd1e7d02772b43fd638fcd5529de`
     const res = await fetch(url);
     const data = await res.json()
     console.log(data)
